@@ -1,5 +1,6 @@
 # MIST 353 Assignment 3
 ### Group Members: Vivek Sriram, Tyler McCoy, Noah Alberti
+
 ****
 ## Idea Combination Statement
 We chose to continue with one idea, and drop the remaining two ideas for the remainder of our work as a group. Our new 'company' will move forward with a plan for a web app that allows a user to select destination/arrival airports
