@@ -10,25 +10,10 @@ BEGIN
     INSERT INTO Airport (CityID, AirportID, AirportName, AirportRunwayCount, AirportAvgYearlyPassengers, AirportDestinationCount)
     VALUES (@CityID, @AirportID, @AirportName, @AirportRunwayCount, @AirportAvgYearlyPassengers, @AirportDestinationCount)
 END;
-GO
+Go
 
 --EXEC InsertAirport @CityID = '10001', @AirportID = '50006', @AirportName = 'Newark Liberty International Airport', @AirportRunwayCount = '3', @AirportAvgYearlyPassengers = '25895943', @AirportDestinationCount = '185';
 
-
-CREATE PROCEDURE InsertAirline
-    @AirlineID NVARCHAR(10),
-    @AirlineName VARCHAR(50),
-    @AirlineRating NVARCHAR(10),
-    @AirlineDelayRating NVARCHAR(10)
-AS
-BEGIN
-    INSERT INTO Airline (AirlineID, AirlineName, AirlineRating, AirlineDelayRating)
-    VALUES (@AirlineID, @AirlineName, @AirlineRating, @AirlineDelayRating)
-END;
-
-Go
-
---EXEC InsertAirline @AirlineID = 90004, @AirlineName = 'Southwest Airlines', @AirlineRating = 3.5, @AirlineDelayRating = 3.8;
 
 CREATE PROCEDURE InsertFlight
     @AirlineID NVARCHAR(10),
