@@ -19,3 +19,12 @@ them inform their booking decisions.
 	- Description: Add a new flight route. Used by website operator when wanting to add delay data about a new flight route.
 6. **searchFlightDelays** (Vivek Sriram)
 	- Description: Get the delay info for a specific flight leaving an airport at a certain time based on Departure AirportID and DepartureTime
+****
+## References
+- MIST 353 Class Lectures & Recordings
+- W3 Schools
+- Chat GPT Prompts as Follows:
+	- I pasted my code and asked chatgpt to find why i was getting this error "Cannot insert the value NULL into column 'AirlineID', table '353Group.dbo.Tmp_Airport'; column does not allow nulls. INSERT fails"
+	- Populate my tables with data based on the table creation code that I provide (pasted table creation code for it to use)
+	- When ChatGPT made the data, it used similar numbers for every unique identifier, asked it to change each id to start with a 1, 5, or 9 based on what the identifier was used for
+ 	- When creating the table was running into PK/FK constraint issues so asked chatgpt to identify what the problem was 	 
