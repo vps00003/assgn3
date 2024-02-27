@@ -1,4 +1,4 @@
-CREATE PROCEDURE getAirportDetails
+CREATE PROCEDURE GetAirportDetails
 @AirportID NVARCHAR(10)
 AS
 BEGIN
@@ -7,7 +7,7 @@ FROM Airport
 WHERE AirportID = @AirportID;
 END;
 Go
---EXEC getAirportDetails @AirportID = '50001';
+--EXEC GetAirportDetails @AirportID = '50001';
 
 
 

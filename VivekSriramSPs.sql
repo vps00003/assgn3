@@ -9,7 +9,7 @@ END;
 GO
 --EXEC getAirlineDelayRatings @AirlineID = '90001';
 
-CREATE PROCEDURE SearchFlightDelays
+CREATE PROCEDURE searchFlightDelays
     @DepartureAirportID NVARCHAR(10),
     @DepartureTime DATETIME
 AS
@@ -21,4 +21,4 @@ AND CAST(DepartureTime AS DATE) = CAST(@DepartureTime AS DATE)
 END;
 GO
 
-EXEC SearchFlightDelays @DepartureAirportID = '50001', @DepartureTime = '2024-02-26 08:00:00'
+--EXEC searchFlightDelays @DepartureAirportID = '50001', @DepartureTime = '2024-02-26 08:00:00'
