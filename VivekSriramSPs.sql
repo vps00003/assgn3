@@ -18,6 +18,7 @@ BEGIN
     WHERE AirlineDelayRating > @DelayRating;
 END;
 GO
+--EXEC GetAirlinesRatingGreaterThan @DelayRating = '3.7';
 
 ALTER PROCEDURE [dbo].[searchFlightDelays]
     @DepartureAirportID NVARCHAR(10),
